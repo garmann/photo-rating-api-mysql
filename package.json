@@ -1,0 +1,24 @@
+{
+  "name": "photo-rating-api",
+  "version": "1.0.0",
+  "description": "api for photo-rating frontend app",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.9.8",
+    "express-zip": "^2.0.1",
+    "mysql": "^2.13.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test:http": "istanbul cover ./node_modules/mocha/bin/_mocha test/test-api-http.js",
+    "test:unit": "./node_modules/mocha/bin/_mocha test/unit-api-functions.js"
+  },
+  "author": "gregor.armann@googlemail.com",
+  "license": "MIT"
+}
