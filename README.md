@@ -22,7 +22,7 @@ npm run test:http
 ```
 docker run -it -e MYSQL_ROOT_PASSWORD=x -p 3306:3306 -v YOURPATH:/tmp/data/ mysql:5.7
 ```
-- after that i currently login and import the database with mysqldump
+- after that i currently login and import the database with mysql
 ```
 docker exec -it DOCKERID /bin/bash
 cd /tmp/data/
