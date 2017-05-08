@@ -16,8 +16,7 @@
     "supertest": "^3.0.0"
   },
   "scripts": {
-    "test:http": "istanbul cover ./node_modules/mocha/bin/_mocha test/test-api-http.js",
-    "test:unit": "./node_modules/mocha/bin/_mocha test/unit-api-functions.js"
+    "test:http": "istanbul cover ./node_modules/mocha/bin/_mocha test/test-api-http.js"
   },
   "author": "gregor.armann@googlemail.com",
   "license": "MIT"

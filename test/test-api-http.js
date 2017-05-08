@@ -34,6 +34,12 @@ describe('supertest: loading express', function () {
       .expect(404, done)
   });
 
+  it('FAIL (GET /listing/asd) should return 400 no valid data', function testtestGetNonExistingShooting2(done){
+    request(server)
+      .get('/listing/asdasd')
+      .expect(400, done)
+  });
+
 
   // need to grab id for a later test, see below...
   var getIdFromTestCreateShootingForLater = '';
@@ -98,7 +104,7 @@ describe('supertest: loading express', function () {
 
   });
 
-  it('FAIL (DELETE /listing/asd) should return 400', function(done){
+  it('FAIL (DELETE /listing/asd) should return 400', function testDeleteNonExistingShooting(done){
     request(server)
       .delete('/listing/asd')
       .expect(400, done)

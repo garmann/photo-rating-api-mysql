@@ -1,17 +1,6 @@
 
 # photo-rating-api-mysql
 
-** currently under development **
-
-**TODO:**
-- unit testing (http testing is working atm)
-- stuff needs to be replaced (unused code)
-- rework of response code and error/input checking
-- output
-- DOCSTRINGS and doc
-- review of all names and parameter
-- more input checking
-
 this is a first replacement version of photo-rating-api which runs without a database. the old version runs against the local fs. comming with that version i'm using mysql docker.
 
 ## description
@@ -24,9 +13,9 @@ currently its missing a database implementation like mysql. it updates the files
 
 ## test
 
+- for testing purposes the database needs to be empty (photo_rating.sql and not full import)
 ```
 npm run test:http
-npm run test:unit
 ```
 
 ## running the db
@@ -34,6 +23,11 @@ npm run test:unit
 docker run -it -e MYSQL_ROOT_PASSWORD=x -p 3306:3306 -v YOURPATH:/tmp/data/ mysql:5.7
 ```
 - after that i currently login and import the database with mysqldump
+```
+docker exec -it DOCKERID /bin/bash
+cd /tmp/data/
+mysql -uroot -px < photo_rating.sql
+```
 
 ## running it api
 
