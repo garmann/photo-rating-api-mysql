@@ -6,8 +6,6 @@ this is a first replacement version of photo-rating-api which runs without a dat
 ## description
 this is a quick project setup / prototype. its simulating an api for the angularjs app: photo-rating - to be able to make backend json calls.
 
-currently its missing a database implementation like mysql. it updates the files on the filesystem.
-
 ## setup
 - see package.json... and npm install`
 
